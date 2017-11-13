@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{E26FD6E1-9C66-498F-B5A4-882AB5D9B591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zohan.SampleWebCore", "Zohan.SampleWebCore\Zohan.SampleWebCore.csproj", "{11993D10-1AB4-41AB-80EF-220B5559DAAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zohan.SampleWebCore", "Zohan.SampleWebCore\Zohan.SampleWebCore.csproj", "{11993D10-1AB4-41AB-80EF-220B5559DAAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zohan.LoggingTests", "Zohan.LoggingTests\Zohan.LoggingTests.csproj", "{CB228E1C-D19B-427C-A179-9F0560B26C3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6AF0AA12-678A-4781-B3DA-14EF1062D87E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{11993D10-1AB4-41AB-80EF-220B5559DAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11993D10-1AB4-41AB-80EF-220B5559DAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11993D10-1AB4-41AB-80EF-220B5559DAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB228E1C-D19B-427C-A179-9F0560B26C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB228E1C-D19B-427C-A179-9F0560B26C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB228E1C-D19B-427C-A179-9F0560B26C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB228E1C-D19B-427C-A179-9F0560B26C3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{11993D10-1AB4-41AB-80EF-220B5559DAAE} = {E26FD6E1-9C66-498F-B5A4-882AB5D9B591}
+		{CB228E1C-D19B-427C-A179-9F0560B26C3E} = {6AF0AA12-678A-4781-B3DA-14EF1062D87E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BAED6C2-4290-4C1B-A7D0-D6E4EB986345}

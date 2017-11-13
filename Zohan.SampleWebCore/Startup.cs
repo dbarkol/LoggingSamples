@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Zohan.SampleWebCore.Models;
 
 namespace Zohan.SampleWebCore
 {
@@ -26,10 +27,13 @@ namespace Zohan.SampleWebCore
             // Add framework services
             services.AddMvc();
 
-            // Add application services
+            // Configure Application Insights
             var instrumentationKey = Configuration.GetSection("ApplicationInsights")["InstrumentationKey"];
             services.AddApplicationInsightsTelemetry(instrumentationKey);
+
+            // Add application services
             services.AddTransient<ITelemetryTracker>(tracker => new TelemetryTracker(instrumentationKey));
+            services.Configure<DocumentDbSettings>(Configuration.GetSection("DocumentDBSettings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

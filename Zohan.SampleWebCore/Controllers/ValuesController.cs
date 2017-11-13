@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using Zohan.SampleWebCore.Models;
+using Zohan.SampleWebCore.Repositories;
 
 namespace Zohan.SampleWebCore.Controllers
 {
